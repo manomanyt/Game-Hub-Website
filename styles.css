@@ -13,13 +13,13 @@ html, body {
 body {
     font-family: "Inter", serif;
     color: rgb(255, 255, 255);
-    background-color: #2b639b;
+    background: linear-gradient(180deg, hsl(210, 57%, 39%), hsl(209, 100%, 68%));
 }
 
 /* ---------- HEADER ---------- */
 
 header {
-    background-color: #366da3;
+    background-color: hsl(210, 53%, 38%);
     width: 100%;
     padding: 20px 0;
 }
@@ -40,10 +40,12 @@ header {
     margin-left: 50px;
     margin-top: -30px;
     transition: transform 0.3s ease;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
 }
 
 .logo:hover {
     transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
 }
 
 nav ul {
@@ -69,6 +71,7 @@ nav a {
 }
 nav a:hover {
     color: #e4e4e4;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
 }
 
 /* ---------- MAIN CONTENT ---------- */
@@ -107,14 +110,17 @@ p {
     height: 350px;
     object-fit: cover;
     border-radius: 50%;
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,0.35));
+    border:1px solid rgb(74, 113, 172);
+    background: linear-gradient(135deg, rgb(74, 113, 172), rgb(104, 171, 248));
 }
 
 /* ---------- FOOTER ---------- */
 
 footer {
-    background: #366da3;
+    background: hsl(210, 52%, 41%);
     width: 100%;
-    padding: 30px 40px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -133,7 +139,7 @@ footer a {
 }
 
 footer span {
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     top: -1px;
 }
@@ -164,6 +170,7 @@ footer span {
 
 #blackjackanim:hover{
     transform: scale(1.1);
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
 }
 
 #crusadersanim{
@@ -172,6 +179,7 @@ footer span {
 
 #crusadersanim:hover{
     transform: scale(1.1);
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
 }
 
 #gametextandtitle {
