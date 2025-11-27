@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Inter", serif;
+    color: rgb(255, 255, 255);
+    background-color: #2b639b;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: #366da3;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -30px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li.dot {
+    pointer-events: none;
+    font-size: 32px;
+    margin: 0 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav a:hover {
+    color: #e4e4e4;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+.content-wrapper {
+    width: 95%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.left-column,
+.middle-column {
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.big-logo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #366da3;
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer span {
+    font-size: 18px;
+    position: relative;
+    top: -1px;
+}
+
+/* ---------- GAME PAGE ---------- */
+
+.main-menu-image {
+    width: 275px;
+    height: 275px;
+    margin-left: 110px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#gameheader {
+    text-align: left;
+    font-size: 70px;
+    margin-top: 24px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-left: 100px;
+    font-weight: normal;
+}
+
+#blackjackanim{
+    transition: transform 0.3s ease;
+}
+
+#blackjackanim:hover{
+    transform: scale(1.1);
+}
+
+#crusadersanim{
+    transition: transform 0.3s ease;    
+}
+
+#crusadersanim:hover{
+    transform: scale(1.1);
+}
+
+#gametextandtitle {
+    width: 95%;
+    margin-left: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 15px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+#blackjackgame {
+    margin-left: 150px;
+}
+
+#buttonlocation {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.download-btn {
+    width: 423px;
+    height: 65px;
+    padding: 10px 16px;
+    border: 2px solid #24a0ed;
+    background-color: #24a0ed;
+    color: white;
+    border-radius: 18px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: auto;
+
+}
+
+#downloadicon {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+}
+
+.gametitle {
+    padding: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
