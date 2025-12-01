@@ -22,6 +22,8 @@ header {
     background-color: hsl(210, 53%, 38%);
     width: 100%;
     padding: 20px 0;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.12);
 }
 
 .header-container {
@@ -126,6 +128,8 @@ footer {
     font-size: 20px;
     color: #ffffff;
     margin-top: auto;
+    backdrop-filter: blur(4px);
+    border-top:1px solid rgba(255,255,255,0.04);
 }
 
 .footer-right {
